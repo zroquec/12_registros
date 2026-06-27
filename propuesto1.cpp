@@ -40,4 +40,16 @@ int main(){
         }
     }
     
+    cout<<"\nEMPLEADO CON MAYOR SUELDO\n";
+    cout<<"Empleado "<<num1+1<<endl;
+    cout<<"Nombre: "<<E[num1].Nombre<<endl;
+    cout<<"Sexo: "<<E[num1].Sexo<<endl;
+    cout<<"Sueldo: "<<E[num1].Sueldo<<endl;
+
+    cout<<"\nEMPLEADO CON MENOR SUELDO\n";
+    cout<<"Empleado "<<num2+1<<endl;
+    cout<<"Nombre: "<<E[num2].Nombre<<endl;
+    cout<<"Sexo: "<<E[num2].Sexo<<endl;
+    cout<<"Sueldo: "<<E[num2].Sueldo<<endl;
+    return 0; 
 }
