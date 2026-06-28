@@ -8,5 +8,16 @@ struct Persona{
 };
 
 int main(){
-    
+    int n,sum=0,cont=0;
+    float prom;
+    Persona P[100];
+    cout<<"Ingrese la cantidad de personas a registrar: ";
+    cin>>n;
+    cin.ignore();
+
+    for(int i=0; i<n; i++){
+        cout<<"\nPersona "<<i+1<<endl;
+        
+    }
+
 }
