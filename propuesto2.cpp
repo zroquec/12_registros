@@ -25,5 +25,14 @@ int main(){
         cin>>P[i].edad;
         cin.ignore();
     }
+    
+    for (int i=0; i<n; i++){
+        if(P[i].edad>50){
+            cont++;
+        }
+
+        sum=sum+P[i].edad;
+    }
+    prom = (float)sum/n;
 
 }
