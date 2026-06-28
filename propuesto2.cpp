@@ -17,7 +17,13 @@ int main(){
 
     for(int i=0; i<n; i++){
         cout<<"\nPersona "<<i+1<<endl;
-        
+        cout<<"Nombres: ";
+        getline(cin, P[i].nombre);
+        cout<<"DNI: ";
+        cin>>P[i].DNI;
+        cout<<"Edad: ";
+        cin>>P[i].edad;
+        cin.ignore();
     }
 
 }
