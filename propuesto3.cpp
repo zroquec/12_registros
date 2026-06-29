@@ -30,8 +30,14 @@ int main(){
     }
 
     do{
+        system("cls"); 
+        cout<<"\nIngrese el numero de mes a buscar (o 0 para salir): ";
         cin>>mes;
-         if (mes!=0){
+        if(mes<0 || mes>12){
+        cout<<"Mes invalido."<<endl;
+        }
+
+        else if (mes!=0){
             for(int i=0; i<n; i++){
                 if(mes==P[i].mes){
                     cout<<"\nPersona "<<i+1<<endl;
@@ -42,5 +48,8 @@ int main(){
                 }
             }
         }
+        if(mes!=0)
+        system("pause");
     }while(mes!=0);
+    return 0;
 }
