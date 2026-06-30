@@ -15,4 +15,17 @@ int main(){
     cout<<"Ingrese la cantidad de atletas: ";
     cin>>n;
     cin.ignore();
+
+    for(int i=0; i<n; i++){
+        cout<<"\nAtleta "<<i+1<<endl;
+        cout<<"Nombre: ";
+        getline(cin, A[i].nombre);
+        cout<<"Pais: ";
+        getline(cin, A[i].pais);
+        cout<<"Disciplina: ";
+        getline(cin, A[i].disciplina);
+        cout<<"Nro de medallas: ";
+        cin>>A[i].medalla;
+        cin.ignore();
+    }
 }
