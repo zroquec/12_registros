@@ -46,4 +46,9 @@ int main(){
             }
         }
     }
+    cout<<"\nAtleta con mayor numero de medallas\n";
+    cout<<"Nombre: "<<A[cont].nombre<<endl;
+    cout<<"Pais: "<<A[cont].pais<<endl;
+    cout<<"Disciplina: "<<A[cont].disciplina<<endl;
+    cout<<"Nro de medallas: "<<A[cont].medalla<<endl;
 }
