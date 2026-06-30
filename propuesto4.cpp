@@ -40,6 +40,10 @@ int main(){
             cout<<"Disciplina: "<<A[i].disciplina<<endl;
             cout<<"Nro de medallas: "<<A[i].medalla<<endl;
 
+            if(max<A[i].medalla){
+                max=A[i].medalla;
+                cont=i;
+            }
         }
     }
 }
