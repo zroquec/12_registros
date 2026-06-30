@@ -34,7 +34,12 @@ int main(){
 
     for(int i=0; i<n; i++){
         if(pais==A[i].pais){
-            
+            cout<<"\nAtleta "<<i+1<<endl;
+            cout<<"Nombre: "<<A[i].nombre<<endl;
+            cout<<"Pais: "<<A[i].pais<<endl;
+            cout<<"Disciplina: "<<A[i].disciplina<<endl;
+            cout<<"Nro de medallas: "<<A[i].medalla<<endl;
+
         }
     }
 }
