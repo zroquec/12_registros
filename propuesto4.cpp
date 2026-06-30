@@ -28,4 +28,13 @@ int main(){
         cin>>A[i].medalla;
         cin.ignore();
     }
+    int cont=0;
+    cout<<"\nIngrese el pais a buscar: ";
+    getline(cin, pais);
+
+    for(int i=0; i<n; i++){
+        if(pais==A[i].pais){
+            
+        }
+    }
 }
