@@ -30,4 +30,11 @@ int main(){
         cin.ignore();
     }
 
+    for (int i=0; i<n ;i++){
+        E[i].suma=0;
+        for(int j=0; j<12; j++){
+            E[i].suma=E[i].suma+E[i].ventas[j];
+        }
+    }
+
 }
