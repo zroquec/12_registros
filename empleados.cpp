@@ -37,4 +37,14 @@ int main(){
         }
     }
 
+     max=E[1].suma;
+    int numer=1;
+
+    for (int i=1; i<n; i++){
+        if(E[i].suma>max){
+            max=E[i].suma;
+            numer=i;
+        }
+    }
+
 }
