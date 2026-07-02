@@ -12,6 +12,7 @@ struct EMPLEADOS{
 int main(){
     EMPLEADOS E[50];
     int n,max;
+    cout<<"Ingrese la cantidad de empleados a registrar: ";
     cin>>n;
     cin.ignore();
 
@@ -46,5 +47,14 @@ int main(){
             numer=i;
         }
     }
+    cout<<"\nEMPLEADO CON MAYORES VENTAS"<<endl;
+    cout<<"Empleado Nro "<<E[numer+1].numero<<endl;
+    cout<<"Nombre: ";
+    cout<<E[numer].nombre;
 
+    for(int i=0; i<n; i++){
+        if(E[i].suma>100){
+            E[i].salario=1.1*E[i].salario;
+        }
+    }
 }
