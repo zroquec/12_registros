@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 struct EMPLEADOS{
@@ -38,8 +39,8 @@ int main(){
         }
     }
 
-     max=E[1].suma;
-    int numer=1;
+     max=E[0].suma;
+    int numer=0;
 
     for (int i=1; i<n; i++){
         if(E[i].suma>max){
@@ -48,13 +49,21 @@ int main(){
         }
     }
     cout<<"\nEMPLEADO CON MAYORES VENTAS"<<endl;
-    cout<<"Empleado Nro "<<E[numer+1].numero<<endl;
-    cout<<"Nombre: ";
-    cout<<E[numer].nombre;
+    cout<<"Empleado Nro "<<E[numer].numero<<endl;
+    cout<<"Nombre: "<<E[numer].nombre<<endl;
 
     for(int i=0; i<n; i++){
         if(E[i].suma>100){
             E[i].salario=1.1*E[i].salario;
         }
     }
+
+    cout<<"\nEMPLEADOS CON VENTAS MENORES A 30 EN EL MES DE DICIEMBRE"<<endl;
+    for(int i=0; i<n; i++){
+        if(E[i].ventas[11]<30){
+            cout<<"Empleado Nro "<<E[i].numero<<endl;
+            cout<<"Nombre: "<<E[i].nombre<<endl;
+        }
+    }
+    return 0;
 }
