@@ -162,6 +162,25 @@ int main(){
                 break;
 
                 case 5:
+                int eliminar;
+                cout<<"\nElija el Nro de contacto que desea eliminar (1 al "<<i<<"): ";
+                cin>>eliminar;
+                cin.ignore();
+                eliminar--; 
+                
+                if(eliminar>=0 && eliminar<i) {
+                    
+                    while (eliminar<i-1) {
+                        CE[eliminar]=CE[eliminar+1];
+                        eliminar++;
+                    }
+                    i--; 
+                    cout<<"\n¡Contacto eliminado con exito!"<<endl;
+                } 
+                else cout<<"Numero de contacto no valido."<<endl;
+                system("pause");
+                break;
+                
                 case 6:
             
             }
