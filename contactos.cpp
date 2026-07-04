@@ -142,10 +142,21 @@ int main(){
                                 k++;
                             }
 
-                            
+                            if(servidor_contacto == servidor_buscado) {
+                                cout<<"\n=================================================================================="<<endl;
+                                cout<<"                           CONTACTO "<<f+1<<endl;
+                                cout<<"----------------------------------------------------------------------------------"<<endl;
+                                cout<<"| Nombre: "<<CE[f].nombre<<endl;
+                                cout<<"| Sexo: "<<CE[f].sexo<<endl;
+                                cout<<"| Edad: "<<CE[f].edad<<endl;
+                                cout<<"| Email: "<<CE[f].email<<endl;
+                                cout<<"==================================================================================\n"<<endl;
+                                encontrados=true;
+                            }
                         }
-
                     }
+                     
+                    if(!encontrados)  cout<<"No se encontraron contactos con ese servidor."<<endl;
                 }
                 system("pause");
                 break;
