@@ -62,6 +62,33 @@ int main(){
                 break;
                 
                 case 2:
+                int nume;
+                cout<<"\nElija el Nro de contacto que desea modificar: ";
+                cin>>nume;
+                cin.ignore();
+                
+                if(nume>0 && nume<=i){
+                    cout<<"\nVuelva a escribir los datos de ese contacto";
+                    cout<<"\n=================================================================================="<<endl;
+                    cout<<"                               CONTACTO "<<nume<<endl;
+                    cout<<"=================================================================================="<<endl;
+                    nume--;
+                    cout<<"Nombre completo: ";
+                    getline(cin, CE[nume].nombre);
+                    cout<<"Sexo: ";
+                    getline(cin, CE[nume].sexo);
+                    cout<<"Edad: ";
+                    cin>>CE[nume].edad;
+                    cin.ignore();
+                    cout<<"Email: ";
+                    getline(cin, CE[nume].email);
+                    cout<<"=================================================================================="<<endl;
+                }
+                else cout<<"\nNumero invalido vuelva a intentarlo."<<endl;
+
+                system("pause");
+                break;
+                
                 case 3:
                 case 4:
                 case 5:
