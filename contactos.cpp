@@ -14,6 +14,7 @@ int main(){
     int n,i=0;
 
     do{
+        system("cls");
         cout<<"=================================================================================="<<endl;
         cout<<"                          AGENDA DE CONTACTOS                                       "<<endl;
         cout<<"=================================================================================="<<endl;
@@ -37,7 +38,29 @@ int main(){
         if(n!=0){
             switch(n){
                 case 1:
-
+                if(i>=100){
+                    cout<<"Agenda llena, no se pueden agregar mas contactos."<<endl;
+                break;
+                }
+                else{
+                    cout<<"\n=================================================================================="<<endl;
+                    cout<<"                             CONTACTO "<<i+1<<endl;
+                    cout<<"=================================================================================="<<endl;
+                    cout<<"Nombre completo: ";
+                    getline(cin, CE[i].nombre);
+                    cout<<"Sexo: ";
+                    getline(cin, CE[i].sexo);
+                    cout<<"Edad: ";
+                    cin>>CE[i].edad;
+                    cin.ignore();
+                    cout<<"Email: ";
+                    getline(cin, CE[i].email);
+                    cout<<"=================================================================================="<<endl;
+                }
+                i++;
+                system("pause");
+                break;
+                
                 case 2:
                 case 3:
                 case 4:
