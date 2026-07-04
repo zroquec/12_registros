@@ -12,6 +12,7 @@ struct ContactoEmail{
 int main(){
     ContactoEmail CE[100];
     int n,i=0;
+    
     do{
         cout<<"=================================================================================="<<endl;
         cout<<"                          AGENDA DE CONTACTOS                                       "<<endl;
@@ -24,6 +25,15 @@ int main(){
         cout<<"6. Buscar un contacto por email"<<endl;
         cout<<"0. Salir del programa"<<endl;
         cout<<"=================================================================================="<<endl;
-        
+        cout<<"\nElija una opcion: ";
+        cin>>n;
+        cin.ignore();
+        while(n<0 || n>6){
+            cout<<"Error: numero invalido vuelva a intentarlo"<<endl;
+            cout<<"\nElija una opcion: ";
+            cin>>n;
+            cin.ignore();
+        }
+
     }while(n!=0);
 }
