@@ -12,7 +12,7 @@ struct ContactoEmail{
 int main(){
     ContactoEmail CE[100];
     int n,i=0;
-    
+
     do{
         cout<<"=================================================================================="<<endl;
         cout<<"                          AGENDA DE CONTACTOS                                       "<<endl;
@@ -34,6 +34,18 @@ int main(){
             cin>>n;
             cin.ignore();
         }
+        if(n!=0){
+            switch(n){
+                case 1:
 
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+            
+            }
+        }    
     }while(n!=0);
+    return 0;
 }
