@@ -190,7 +190,22 @@ int main(){
                     bool encontrado=false;
                     cout<<"Ingrese el email exacto del contacto: ";
                     getline(cin, email_buscado);
-                    
+
+                    for(int f=0; f<i; f++) {
+                        if (CE[f].email==email_buscado) {
+                            cout<<"\n=================================================================================="<<endl;
+                            cout<<"                               CONTACTO ENCONTRADO"<<endl;
+                            cout<<"----------------------------------------------------------------------------------"<<endl;
+                            cout<<"| Nombre: "<<CE[f].nombre<<endl;
+                            cout<<"| Sexo: "<<CE[f].sexo<<endl;
+                            cout<<"| Edad: "<<CE[f].edad<<endl;
+                            cout<<"| Email: "<<CE[f].email<<endl;
+                            cout<<"=================================================================================="<<endl;
+                            encontrado=true;
+                            break;
+                        }
+                    }
+                    if(!encontrado) cout<<"\nNo se encontro ningun contacto con ese email."<<endl;
                 }
                 system("pause");
                 break;
