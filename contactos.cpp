@@ -10,5 +10,20 @@ struct ContactoEmail{
 };
 
 int main(){
-    
+    ContactoEmail CE[100];
+    int n,i=0;
+    do{
+        cout<<"=================================================================================="<<endl;
+        cout<<"                          AGENDA DE CONTACTOS                                       "<<endl;
+        cout<<"=================================================================================="<<endl;
+        cout<<"1. Agregar un contacto"<<endl;
+        cout<<"2. Modificar un contacto"<<endl;
+        cout<<"3. Mostrar un listado general de contactos"<<endl;
+        cout<<"4. Montrar un listado de contactos por servidor"<<endl;
+        cout<<"5. Eliminar un contacto"<<endl;
+        cout<<"6. Buscar un contacto por email"<<endl;
+        cout<<"0. Salir del programa"<<endl;
+        cout<<"=================================================================================="<<endl;
+        
+    }while(n!=0);
 }
