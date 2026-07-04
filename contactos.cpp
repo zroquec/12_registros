@@ -122,6 +122,16 @@ int main(){
                     cout<<"\n--- CONTACTOS ENCONTRADOS ---"<<endl;
             
                     for(int f=0; f<i; f++) {
+                        string correo_actual=CE[f].email;
+                        int posicion_arroba=-1;
+                        int j=0;
+                        while(correo_actual[j]!='\0') {
+                            if(correo_actual[j]=='@') {
+                                posicion_arroba=j;
+                                break;
+                            }
+                            j++;
+                        }
 
                     }
                 }
