@@ -88,8 +88,26 @@ int main(){
 
                 system("pause");
                 break;
-                
+
                 case 3:
+                if(i==0){
+                    cout<<"No hay contactos registrados."<<endl;
+                }
+                else{
+                    for(int f=0; f<i ; f++){
+                        cout<<"\n=================================================================================="<<endl;
+                        cout<<"                              CONTACTO "<<f+1<<endl;
+                        cout<<"----------------------------------------------------------------------------------"<<endl;
+                        cout<<"| Nombre completo: "<<CE[f].nombre<<endl;
+                        cout<<"| Sexo: "<<CE[f].sexo<<endl;
+                        cout<<"| Edad: "<<CE[f].edad<<endl;
+                        cout<<"| Email: "<<CE[f].email<<endl;
+                        cout<<"==================================================================================\n"<<endl;
+                    }
+                }
+                system("pause");
+                break;
+                
                 case 4:
                 case 5:
                 case 6:
