@@ -180,9 +180,20 @@ int main(){
                 else cout<<"Numero de contacto no valido."<<endl;
                 system("pause");
                 break;
-                
+
                 case 6:
-            
+                if(i==0){
+                    cout<<"No hay contactos registrados todavia."<<endl;
+                } 
+                else{
+                    string email_buscado;
+                    bool encontrado=false;
+                    cout<<"Ingrese el email exacto del contacto: ";
+                    getline(cin, email_buscado);
+                    
+                }
+                system("pause");
+                break;
             }
         }    
     }while(n!=0);
