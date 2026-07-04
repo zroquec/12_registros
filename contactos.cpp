@@ -133,6 +133,18 @@ int main(){
                             j++;
                         }
 
+                        if(posicion_arroba!=-1) {
+                            string servidor_contacto="";
+                            
+                            int k = posicion_arroba + 1;
+                            while(correo_actual[k] != '\0') {
+                                servidor_contacto += correo_actual[k];
+                                k++;
+                            }
+
+                            
+                        }
+
                     }
                 }
                 system("pause");
