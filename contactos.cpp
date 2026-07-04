@@ -107,8 +107,27 @@ int main(){
                 }
                 system("pause");
                 break;
-                
+
                 case 4:
+                if(i==0) {
+                    cout<<"\nNo hay contactos registrados."<<endl;
+                } 
+                else {
+                    string servidor_buscado;
+                    bool encontrados=false;
+                    
+                    cout<<"\nIngrese el servidor a buscar (ej: gmail.com): ";
+                    getline(cin, servidor_buscado);
+
+                    cout<<"\n--- CONTACTOS ENCONTRADOS ---"<<endl;
+            
+                    for(int f=0; f<i; f++) {
+
+                    }
+                }
+                system("pause");
+                break;
+
                 case 5:
                 case 6:
             
