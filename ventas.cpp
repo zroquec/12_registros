@@ -127,9 +127,26 @@ int main(){
                 else cout<<"\nNumero invalido vuelva a intentarlo."<<endl;
                 system("pause");
                 break;
-                
+
                 case 'E':
+                int eliminar;
+                cout<<"\nElija el Nro de producto que desea eliminar (1 al "<<i<<"): ";
+                cin>>eliminar;
+                cin.ignore();
+                eliminar--; 
+                
+                if(eliminar>=0 && eliminar<i) {
+                    while (eliminar<i-1) {
+                        P[eliminar]=P[eliminar+1];
+                        eliminar++;
+                    }
+                    i--; 
+                    cout<<"\n¡Producto eliminado con exito!"<<endl;
+                } 
+                else cout<<"Numero de producto no valido."<<endl;
+                system("pause");
                 break;
+                
                 case 'F':
                 break;
                 case 'G':
