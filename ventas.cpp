@@ -21,7 +21,7 @@ int main(){
     int i=0,numventas=0;
 
     do{
-
+        system("cls");
         cout<<"================================================================"<<endl;
         cout<<"                       MENU DE OPCIONES                         "<<endl;
         cout<<"================================================================"<<endl;
@@ -38,7 +38,27 @@ int main(){
         cout<<"\nElija una opcion: ";
         cin>>opcion;
         cin.ignore();
-        
+
+        if (opcion != 'S'){
+            switch(opcion){
+                case 'A':
+                break;
+                case 'B':
+                break;
+                case 'C':
+                break;
+                case 'D':
+                break;
+                case 'E':
+                break;
+                case 'F':
+                break;
+                case 'G':
+                break;
+                case 'H':
+                break;
+            }
+        }
 
     }while(opcion != 'S');
     return 0;
