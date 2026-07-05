@@ -74,8 +74,37 @@ int main(){
                 system("pause");
                 break;
                 
-                case 'C':
+                case 'C': {
+                    int f=0;
+                    string nombre_buscar;
+                    cout<<"Escriba el nombre del producto que desea buscar: ";
+                    getline(cin, nombre_buscar);
+
+                    bool encontrado=false;
+
+                    if(i==0){
+                        cout<<"No hay productos registrados todavia."<<endl;
+                    }
+                    else{
+                        while(f<i && !encontrado){
+                            if(nombre_buscar==P[f].nombre){
+                                cout<<"================================================================"<<endl;
+                                cout<<"                         PRODUCTO ENCONTRADO                    "<<endl;
+                                cout<<"================================================================"<<endl;
+                                cout<<"Producto "<<f+1<<endl;
+                                cout<<"| Nombre: "<<P[f].nombre<<endl;
+                                cout<<"| Precio: "<<P[f].precio<<endl;
+                                cout<<"----------------------------------------------------------------"<<endl;
+                                encontrado=true;
+                            }
+                            f++;
+                        }
+                        if(!encontrado) cout<<"\nNo se encontro ningun producto con ese nombre."<<endl;
+                    }
+                    system("pause");
                 break;
+                }
+
                 case 'D':
                 break;
                 case 'E':
