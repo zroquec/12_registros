@@ -106,7 +106,28 @@ int main(){
                 }
 
                 case 'D':
+                int nume;
+                cout<<"\nElija el Nro de producto que desea modificar: ";
+                cin>>nume;
+                cin.ignore();
+                
+                if(nume>0 && nume<=i){
+                    cout<<"\nVuelva a escribir los datos de ese producto";
+                    cout<<"\n================================================================"<<endl;
+                    cout<<"                       PRODUCTO "<<nume<<endl;
+                    cout<<"================================================================"<<endl;
+                    nume--;
+                    cout<<"| Nombre: ";
+                    getline(cin, P[nume].nombre);
+                    cout<<"| Precio: ";
+                    cin>>P[nume].precio;
+                    cin.ignore();
+                    cout<<"================================================================"<<endl;
+                }
+                else cout<<"\nNumero invalido vuelva a intentarlo."<<endl;
+                system("pause");
                 break;
+                
                 case 'E':
                 break;
                 case 'F':
