@@ -42,7 +42,25 @@ int main(){
         if (opcion != 'S'){
             switch(opcion){
                 case 'A':
+                if(i>=100){
+                    cout<<"Se alcanzo el limite maximo de productos (100)."<<endl;
                 break;
+                }
+                else{
+                    cout<<"\n================================================================"<<endl;
+                    cout<<"                         PRODUCTO "<<i+1<<endl;
+                    cout<<"================================================================"<<endl;
+                    cout<<"| Nombre del producto: ";
+                    getline(cin, P[i].nombre);
+                    cout<<"| Precio: ";
+                    cin>>P[i].precio;
+                    cin.ignore();
+                    cout<<"================================================================"<<endl;
+                }
+                i++;
+                system("pause");
+                break;
+                
                 case 'B':
                 break;
                 case 'C':
