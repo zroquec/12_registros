@@ -31,7 +31,7 @@ int main(){
         cout<<"D: Actualizar los datos de un producto."<<endl;
         cout<<"E: Eliminar un producto."<<endl;
         cout<<"F: Registrar una venta."<<endl;
-        cout<<"G: Listar las ventas realizadas"<<endl;
+        cout<<"G: Listar las ventas realizadas."<<endl;
         cout<<"H: Calcular el total de ventas realizadas."<<endl;
         cout<<"S: Salir del programa."<<endl;
         cout<<"================================================================"<<endl;
@@ -203,8 +203,16 @@ int main(){
                 }
                 system("pause");
                 break;
-                
+
                 case 'H':
+                float totalventas=0;
+                for (int j=0; j<numventas; j++){
+                    totalventas=totalventas+V[j].precioTotal;
+                }
+                cout<<"================================================================"<<endl;
+                cout<<"| Total de ventas realizadas: "<<totalventas<<endl;
+                cout<<"================================================================"<<endl;
+                system("pause");
                 break;
             }
         }
