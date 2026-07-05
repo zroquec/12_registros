@@ -22,7 +22,24 @@ int main(){
 
     do{
 
+        cout<<"================================================================"<<endl;
+        cout<<"                       MENU DE OPCIONES                         "<<endl;
+        cout<<"================================================================"<<endl;
+        cout<<"A: Registrar un nuevo producto."<<endl;
+        cout<<"B: Listar los productos registrados."<<endl;
+        cout<<"C: Buscar un producto por nombre."<<endl;
+        cout<<"D: Actualizar los datos de un producto."<<endl;
+        cout<<"E: Eliminar un producto."<<endl;
+        cout<<"F: Registrar una venta."<<endl;
+        cout<<"G: Listar las ventas realizadas"<<endl;
+        cout<<"H: Calcular el total de ventas realizadas."<<endl;
+        cout<<"S: Salir del programa."<<endl;
+        cout<<"================================================================"<<endl;
+        cout<<"\nElija una opcion: ";
+        cin>>opcion;
+        cin.ignore();
         
+
     }while(opcion != 'S');
     return 0;
 }
