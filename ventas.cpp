@@ -190,7 +190,20 @@ int main(){
                 break;
 
                 case 'G':
+                cout<<"================================================================"<<endl;
+                cout<<"                         VENTAS REGISTRADAS                     "<<endl;
+                cout<<"================================================================"<<endl;
+                for (int j=0; j<numventas; j++){
+                    cout<<"VENTA "<<j+1<<endl;
+                    cout<<"| Id venta: "<<V[j].idVenta<<endl;
+                    cout<<"| Nombre del producto: "<<V[j].producto<<endl;
+                    cout<<"| Cantidad: "<<V[j].cantidad<<endl;
+                    cout<<"| Precio total: "<<V[j].precioTotal<<endl;
+                    cout<<"----------------------------------------------------------------"<<endl;
+                }
+                system("pause");
                 break;
+                
                 case 'H':
                 break;
             }
