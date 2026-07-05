@@ -146,9 +146,49 @@ int main(){
                 else cout<<"Numero de producto no valido."<<endl;
                 system("pause");
                 break;
-                
+
                 case 'F':
+                if(i==0){
+                cout<<"No hay productos registrados. No se puede registrar una venta."<<endl;
+                }
+                else{
+                    if(numventas>=100){
+                        cout<<"Se alcanzo el limite maximo de ventas (100)."<<endl;
+                    break;
+                    }
+                    else{
+                        cout<<"\n================================================================"<<endl;
+                        cout<<"                         VENTA "<<numventas+1<<endl;
+                        cout<<"================================================================"<<endl;
+                        cout<<"| Id venta: ";
+                        cin>>V[numventas].idVenta;
+                        cin.ignore();
+                        cout<<"| Nombre del producto: ";
+                        getline(cin, V[numventas].producto);
+                        cout<<"| Cantidad: ";
+                        cin>>V[numventas].cantidad;
+                        cin.ignore();
+                        bool encontrado=false;
+                        for(int j=0; j<i; j++){
+                            if(V[numventas].producto==P[j].nombre){
+                                V[numventas].precioTotal= V[numventas].cantidad*P[j].precio;
+                                cout<<"| Precio total: "<<V[numventas].precioTotal<<endl;
+                                encontrado=true;
+                            }
+                        }
+                        if(encontrado){
+                            cout<<"================================================================"<<endl;
+                            cout<<"¡Venta registrada con exito!"<<endl;
+                            numventas++;
+                        }
+                        else{
+                            cout<<"Producto no encontrado. Venta no registrada."<<endl;
+                        }
+                    }
+                }
+                system("pause");
                 break;
+
                 case 'G':
                 break;
                 case 'H':
