@@ -60,9 +60,20 @@ int main(){
                 i++;
                 system("pause");
                 break;
-                
+
                 case 'B':
+                cout<<"================================================================"<<endl;
+                cout<<"                         PRODUCTOS REGISTRADOS                  "<<endl;
+                cout<<"================================================================"<<endl;
+                for (int f=0; f<i; f++){
+                    cout<<"Producto "<<f+1<<endl;
+                    cout<<"| Nombre: "<<P[f].nombre<<endl;
+                    cout<<"| Precio: "<<P[f].precio<<endl;
+                    cout<<"----------------------------------------------------------------"<<endl;
+                }
+                system("pause");
                 break;
+                
                 case 'C':
                 break;
                 case 'D':
